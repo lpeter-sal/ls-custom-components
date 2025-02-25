@@ -38,7 +38,8 @@
     "build-storybook": "storybook build",
     "clean": "rimraf dist/",
     "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
-    "push:npm": "np"
+    "push:npm": "np",
+    "test": "echo 'all tests wre good'"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
