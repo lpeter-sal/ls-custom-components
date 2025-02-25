@@ -1,7 +1,7 @@
 {
   "name": "ls-custom-components",
   "private": false,
-  "version": "0.0.1-rc3",
+  "version": "0.0.1-rc4",
   "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -12,9 +12,8 @@
     "salvador"
   ],
   "license": "MIT",
-  "homepage": "https://TODO:...",
   "repository": {
-    "url": "https://TODO:...",
+    "url": "https://github.com/lpeter-sal/ls-custom-components",
     "type": "git"
   },
   "files": [
@@ -24,8 +23,8 @@
     "branch": "main"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.8.0 || ^17.0.0, || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0, || ^18.0.0 || ^19.0.0"
   },
   "scripts": {
     "dev": "npm run storybook",
@@ -35,7 +34,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
