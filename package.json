@@ -1,21 +1,39 @@
 {
-  "name": "my-storybook",
-  "private": true,
-  "version": "0.0.0",
+  "name": "ls-custom-components",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "keywords": [
+    "react", "dev", "luis", "salvador"
+  ],
+  "license": "MIT",
+  "homepage": "https://TODO:...",
+  "repository": {
+    "url":  "https://TODO:...",
+    "type": "git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "release": {
+    "branch": "main"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
   "scripts": {
     "dev": "npm run storybook",
-    "build": "tsc -b && vite build",
+    "build": "tsc",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "@chromatic-com/storybook": "^3.2.4",
     "@eslint/js": "^9.19.0",
     "@storybook/addon-essentials": "^8.5.8",
